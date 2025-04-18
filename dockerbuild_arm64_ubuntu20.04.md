@@ -18,7 +18,7 @@ deb https://mirrors.aliyun.com/ubuntu-ports/ focal-updates main restricted unive
 deb https://mirrors.aliyun.com/ubuntu-ports/ focal-backports main restricted universe multiverse
 EOF
 #新建普通用户
-userad -m -s <用户名>
+useradd -m -s <用户名>
 passwd <用户名>
 #容器没有sudo，先安装
 apt install -y sudo
